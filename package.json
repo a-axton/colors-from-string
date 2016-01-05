@@ -1,15 +1,15 @@
 {
-  "name": "npm-starter",
+  "name": "colors-from-string",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
-  "homepage": "https://github.com/a-axton/module-starter",
+  "description": "Returns all colors found in a string. Looks for hex, rgb, rgba, hsl, hsla and css color keywords.",
+  "main": "dist/colors-from-string.js",
+  "homepage": "https://github.com/a-axton/colors-from-string",
   "repository": {
     "type": "git",
-    "url": "https://github.com/a-axton/module-starter.git"
+    "url": "https://github.com/a-axton/colors-from-string.git"
   },
   "bugs": {
-    "url" : "https://github.com/a-axton/module-starter/issues"
+    "url": "https://github.com/a-axton/colors-from-string/issues"
   },
   "babel": {
     "presets": [
@@ -17,7 +17,7 @@
     ]
   },
   "scripts": {
-    "test": "webpack-dev-server 'mocha!./test/tests.js'",
+    "test": "webpack-dev-server --hot 'mocha!./test/tests.js'",
     "watch": "DEV=1 webpack --progress --colors --watch",
     "build": "PROD=1 webpack --progress --colors"
   },
@@ -30,9 +30,13 @@
     "chai": "^3.4.1",
     "eslint": "^1.10.3",
     "eslint-loader": "^1.2.0",
+    "json-loader": "^0.5.4",
     "mocha": "^2.3.4",
     "mocha-loader": "^0.7.1",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "css-color-names": "0.0.3"
   }
 }
